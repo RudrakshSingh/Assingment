@@ -1,3 +1,5 @@
+/* Base styles (for all screen sizes) */
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #f5f5f5;
@@ -9,6 +11,7 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* Ensure items wrap to next line on smaller screens */
 }
 
 .product-list,
@@ -17,15 +20,16 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  margin-bottom: 20px; /* Add margin bottom to create space between sections */
+  width: 100%; /* Take full width on small screens */
 }
 
 .product-list {
-  flex: 3;
-  margin-right: 20px;
+  flex: 100%; /* Full width on small screens */
 }
 
 .cart-section {
-  flex: 1;
+  flex: 100%; /* Full width on small screens */
 }
 
 .product-card {
@@ -34,6 +38,8 @@ body {
 
 .product-card img {
   border-radius: 8px;
+  max-width: 100%; /* Ensure images don't overflow container */
+  height: auto;
 }
 
 .cart-item {
@@ -154,24 +160,56 @@ body {
   margin-bottom: 10px;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  /* Medium devices (tablets, landscape phones) */
+  .container {
+    padding: 40px;
+  }
+
+  .product-list {
+    flex: 3;
+    margin-right: 20px;
+  }
+
+  .cart-section {
+    flex: 1;
+  }
+
+  .categories {
+    justify-content: flex-start; /* Adjust alignment for medium screens */
+  }
+
+  .categories button {
+    margin-right: 10px; /* Add spacing between category buttons */
+  }
 }
 
-.footer .footer-icon {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
+@media only screen and (max-width: 767px) {
+  /* Small devices (portrait phones) */
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-.footer .footer-icon .MuiSvgIcon-root {
-  font-size: 24px;
-  margin-right: 5px;
+  .product-list,
+  .cart-section {
+    padding: 15px;
+  }
+
+  .categories {
+    flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
+    justify-content: center;
+  }
+
+  .categories button {
+    margin: 5px; /* Add margin to category buttons */
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
 }
