@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
-import { Dashboard, BarChart, Settings } from "@material-ui/icons";
+import { Typography } from "@mui/material";
+import { Dashboard, BarChart, Settings } from "@mui/icons-material";
 
 const Footer = () => {
   return (

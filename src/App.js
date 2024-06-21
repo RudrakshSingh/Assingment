@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Grid } from "@material-ui/core";
+import { Container, Grid } from "@mui/material";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
@@ -10,6 +10,9 @@ const products = [
   { id: 2, name: "GIMBER N°2 700 ml", price: 25.85, image: "path_to_image" },
   { id: 3, name: "SML GIMBER 500ml", price: 20.45, image: "path_to_image" },
   { id: 4, name: "GIMBER N°2 500 ml", price: 26.0, image: "path_to_image" },
+  { id: 5, name: "GIMBER N°2 500 ml", price: 26.0, image: "path_to_image" },
+  { id: 6, name: "GIMBER N°2 500 ml", price: 26.0, image: "path_to_image" },
+  { id: 7, name: "GIMBER N°2 500 ml", price: 26.0, image: "path_to_image" },
   // Add more products as needed
 ];
 

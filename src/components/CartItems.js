@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography, IconButton } from "@material-ui/core";
-import DeleteIcon from "@material-ui/icons/Delete";
+import { Typography, IconButton } from "@mui/material";
+import DeleteForever from "@mui/icons-material/DeleteForever";
 
 const CartItem = ({ item, removeFromCart }) => (
   <div
@@ -14,7 +14,7 @@ const CartItem = ({ item, removeFromCart }) => (
     <Typography>{item.name}</Typography>
     <Typography>${item.price}</Typography>
     <IconButton onClick={() => removeFromCart(item)}>
-      <DeleteIcon />
+      <DeleteForever />
     </IconButton>
   </div>
 );

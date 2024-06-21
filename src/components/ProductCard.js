@@ -5,7 +5,7 @@ import {
   CardMedia,
   Typography,
   Button,
-} from "@material-ui/core";
+} from "@mui/material";
 
 const ProductCard = ({ product, addToCart }) => {
   return (
