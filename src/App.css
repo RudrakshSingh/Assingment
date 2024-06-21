@@ -14,8 +14,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-<<<<<<< HEAD
-=======
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; /* Ensure items wrap to next line on smaller screens */
@@ -68,7 +66,6 @@ body {
 .button {
   margin-top: 20px;
   width: 100%;
->>>>>>> 4c03f6aba40e6d12add9d262418e103af2325fb4
 }
 
 .search-bar {
@@ -281,8 +278,6 @@ body {
   .product-card {
     flex: 1 1 calc(100% - 20px);
   }
-
-<<<<<<< HEAD
   .container {
     flex-direction: column;
   }
@@ -293,58 +288,58 @@ body {
 
   .footer {
     flex-direction: column;
-=======
-/* Media Queries */
+    /* Media Queries */
 
-@media only screen and (min-width: 768px) {
-  /* Medium devices (tablets, landscape phones) */
-  .container {
-    padding: 40px;
-  }
+    @media only screen and (min-width: 768px) {
+      /* Medium devices (tablets, landscape phones) */
+      .container {
+        padding: 40px;
+      }
 
-  .product-list {
-    flex: 3;
-    margin-right: 20px;
-  }
+      .product-list {
+        flex: 3;
+        margin-right: 20px;
+      }
 
-  .cart-section {
-    flex: 1;
-  }
+      .cart-section {
+        flex: 1;
+      }
 
-  .categories {
-    justify-content: flex-start; /* Adjust alignment for medium screens */
-  }
+      .categories {
+        justify-content: flex-start; /* Adjust alignment for medium screens */
+      }
 
-  .categories button {
-    margin-right: 10px; /* Add spacing between category buttons */
-  }
-}
+      .categories button {
+        margin-right: 10px; /* Add spacing between category buttons */
+      }
+    }
 
-@media only screen and (max-width: 767px) {
-  /* Small devices (portrait phones) */
-  .container {
-    flex-direction: column;
-    padding: 20px;
-  }
+    @media only screen and (max-width: 767px) {
+      /* Small devices (portrait phones) */
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
 
-  .product-list,
-  .cart-section {
-    padding: 15px;
-  }
+      .product-list,
+      .cart-section {
+        padding: 15px;
+      }
 
-  .categories {
-    flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
-    justify-content: center;
-  }
+      .categories {
+        flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
+        justify-content: center;
+      }
 
-  .categories button {
-    margin: 5px; /* Add margin to category buttons */
-  }
+      .categories button {
+        margin: 5px; /* Add margin to category buttons */
+      }
 
-  .footer {
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
->>>>>>> 4c03f6aba40e6d12add9d262418e103af2325fb4
+      .footer {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+      }
+    }
   }
 }
